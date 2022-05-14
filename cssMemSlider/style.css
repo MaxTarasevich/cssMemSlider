@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: darkgray;
+}
+h1{
+    text-align: center;
+}
+.slider{
+    max-width: 800px;
+    height: 60vh;
+    margin: 5% auto;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.slider__item{
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+}
+.slider__item img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.slider__item p{
+text-align: center;
+background-color: aquamarine;
+margin: 0;
+padding: 0.5em;
+}
+.slider__control{
+    text-align: center;
+}
+.slider__control a{
+    font-size: 1.5rem;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 100%;
+    background-color: beige;
+}
