@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #F1EEE9;
+}
+h1{
+    text-align: center;
+}
+.slider{
+    max-width: 60%;
+    height: 70vh;
+    margin: 2% auto;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+.slider__item{
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #73777B;
+    border-radius: 2em;
+    padding: 1.5em;
+    scroll-snap-align: start;
+}
+.slider__item img{
+    display: block;
+    width: 100%;
+    height: 50vh;
+    object-fit: contain;
+    margin-bottom: 0.5em;
+}
+.slider__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider__wrapper p{
+    color: aliceblue;
+    font-size: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+.slider__control{
+   display: flex;
+   justify-content: center;
+   gap: 0.8em;
+}
+.slider__control a{
+    font-size: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 100%;
+    background-color: transparent;
+    transition: all 0.3s ease-in;
+}
+.slider__control a:hover{
+    background-color: #EC994B;
+}
+.slider__control a:active{
+    background-color: #663399;
+}
+
+.slider__control a  span{
+    width: 0.8em;
+    height: 0.8em;
+    background-color: rgb(21, 19, 60, 0.9);
+    border-radius: 100%;
+}
+
+a.active{
+    background-color: beige;
+}
+
+@media (max-width:900px){
+    .slider{
+        max-width: 90%;
+    }
+}
+
+@media (max-width:700px){
+    h1{
+       font-size: 1.5rem;
+       margin: 0.5em;
+    }
+    .slider{
+        height: 90vh;
+    }
+    .slider__wrapper{
+        flex-wrap: wrap;
+    }
+    .slider__item img{
+        height: 60vh;
+    }
+    .slider__wrapper p{
+        width: 100%;
+        text-align: center;
+        order: 2;
+        font-size: 1.2rem;
+        margin: 0.5em;
+    }
+    .slider__control{
+        width: 100%;
+        margin: 0.5em;
+        order: 1;
+    }
+}
