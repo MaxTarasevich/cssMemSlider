@@ -9,7 +9,7 @@ h1{
     text-align: center;
 }
 .slider{
-    max-width: 800px;
+    max-width: 60%;
     height: 60vh;
     margin: 5% auto;
     display: flex;
