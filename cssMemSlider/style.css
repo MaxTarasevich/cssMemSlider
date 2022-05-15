@@ -73,6 +73,10 @@ h1{
     border-radius: 100%;
 }
 
+a.active{
+    background-color: beige;
+}
+
 @media (max-width:900px){
     .slider{
         max-width: 90%;
