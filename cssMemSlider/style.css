@@ -10,8 +10,8 @@ h1{
 }
 .slider{
     max-width: 60%;
-    height: 60vh;
-    margin: 5% auto;
+    height: 70vh;
+    margin: 2% auto;
     display: flex;
     overflow: hidden;
     scroll-behavior: smooth;
